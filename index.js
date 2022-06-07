@@ -13,7 +13,8 @@ let world = require("./world")
 const server = new ApolloServer({
   typeDefs, resolvers,
   context: async ({ req }) => ({
-  world: world
+  world: world,
+  user: req.headers["x-user"]
   })
  });
  
