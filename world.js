@@ -254,193 +254,193 @@ module.exports = {
                 },
             ]
         }
-        ],
-        "allunlocks": [
-            {
-                "name": "Apprenti dresseur",
-                "logo": "icones/premierunlock.jpg",
-                "seuil": 25,
-                "idcible": 0,
-                "ratio": 2,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Nom du premier unlock général",
-                "logo": "icones/premierunlock.jpg",
-                "seuil": 50,
-                "idcible": 0,
-                "ratio": 2,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Nom du premier unlock général",
-                "logo": "icones/premierunlock.jpg",
-                "seuil": 75,
-                "idcible": 0,
-                "ratio": 2,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Maître de la ligue",
-                "logo": "icones/premierunlock.jpg",
-                "seuil": 100,
-                "idcible": 0,
-                "ratio": 2,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-        ],
-        "upgrades": [
-            {
-                "name": "Nom du premier upgrade",
-                "logo": "icones/premierupgrade.jpg",
-                "seuil": 1e3,
-                "idcible": 1,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Nom du premier upgrade",
-                "logo": "icones/premierupgrade.jpg",
-                "seuil": 1e3,
-                "idcible": 2,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Nom du premier upgrade",
-                "logo": "icones/premierupgrade.jpg",
-                "seuil": 1e3,
-                "idcible": 3,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Nom du premier upgrade",
-                "logo": "icones/premierupgrade.jpg",
-                "seuil": 1e3,
-                "idcible": 4,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Nom du premier upgrade",
-                "logo": "icones/premierupgrade.jpg",
-                "seuil": 1e3,
-                "idcible": 5,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Nom du premier upgrade",
-                "logo": "icones/premierupgrade.jpg",
-                "seuil": 1e3,
-                "idcible": 6,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-        ],
-        "angelupgrades": [
-            {
-                "name": "Palkia",
-                "logo": "ressources/angels/palkia.png",
-                "seuil": 10,
-                "idcible": 0,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Dialga",
-                "logo": "ressources/angels/dialga.png",
-                "seuil": 10,
-                "idcible": 0,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Mewtwo",
-                "logo": "ressources/angels/mewtwo.png",
-                "seuil": 10,
-                "idcible": 0,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Mew",
-                "logo": "ressources/angels/mew.png",
-                "seuil": 10,
-                "idcible": 0,
-                "ratio": 3,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-        ],
-        "managers": [
-            {
-                "name": "Pierre",
-                "logo": "ressources/dresseurs/pierre.jpg",
-                "seuil": 10,
-                "idcible": 1,
-                "ratio": 0,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Ondine",
-                "logo": "ressources/dresseurs/ondine.jpg",
-                "seuil": 10,
-                "idcible": 2,
-                "ratio": 0,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Régis",
-                "logo": "ressources/dresseurs/regis.jpg",
-                "seuil": 10,
-                "idcible": 3,
-                "ratio": 0,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Major Bob",
-                "logo": "ressources/dresseurs/majorBob.jpg",
-                "seuil": 10,
-                "idcible": 4,
-                "ratio": 0,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Giovanni",
-                "logo": "ressources/dresseurs/giovanni.jpg",
-                "seuil": 10,
-                "idcible": 5,
-                "ratio": 0,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-            {
-                "name": "Peter",
-                "logo": "ressources/dresseurs/peter.jpg",
-                "seuil": 10,
-                "idcible": 6,
-                "ratio": 0,
-                "typeratio": "gain",
-                "unlocked": "false"
-            },
-        ]
+    ],
+    "allunlocks": [
+        {
+            "name": "Apprenti dresseur",
+            "logo": "icones/premierunlock.jpg",
+            "seuil": 25,
+            "idcible": 0,
+            "ratio": 2,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Nom du premier unlock général",
+            "logo": "icones/premierunlock.jpg",
+            "seuil": 50,
+            "idcible": 0,
+            "ratio": 2,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Nom du premier unlock général",
+            "logo": "icones/premierunlock.jpg",
+            "seuil": 75,
+            "idcible": 0,
+            "ratio": 2,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Maître de la ligue",
+            "logo": "icones/premierunlock.jpg",
+            "seuil": 100,
+            "idcible": 0,
+            "ratio": 2,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+    ],
+    "upgrades": [
+        {
+            "name": "Nom du premier upgrade",
+            "logo": "icones/premierupgrade.jpg",
+            "seuil": 1e3,
+            "idcible": 1,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Nom du premier upgrade",
+            "logo": "icones/premierupgrade.jpg",
+            "seuil": 1e3,
+            "idcible": 2,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Nom du premier upgrade",
+            "logo": "icones/premierupgrade.jpg",
+            "seuil": 1e3,
+            "idcible": 3,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Nom du premier upgrade",
+            "logo": "icones/premierupgrade.jpg",
+            "seuil": 1e3,
+            "idcible": 4,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Nom du premier upgrade",
+            "logo": "icones/premierupgrade.jpg",
+            "seuil": 1e3,
+            "idcible": 5,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Nom du premier upgrade",
+            "logo": "icones/premierupgrade.jpg",
+            "seuil": 1e3,
+            "idcible": 6,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+    ],
+    "angelupgrades": [
+        {
+            "name": "Palkia",
+            "logo": "ressources/angels/palkia.png",
+            "seuil": 10,
+            "idcible": 0,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Dialga",
+            "logo": "ressources/angels/dialga.png",
+            "seuil": 10,
+            "idcible": 0,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Mewtwo",
+            "logo": "ressources/angels/mewtwo.png",
+            "seuil": 10,
+            "idcible": 0,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Mew",
+            "logo": "ressources/angels/mew.png",
+            "seuil": 10,
+            "idcible": 0,
+            "ratio": 3,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+    ],
+    "managers": [
+        {
+            "name": "Pierre",
+            "logo": "ressources/dresseurs/pierre.jpg",
+            "seuil": 10,
+            "idcible": 1,
+            "ratio": 0,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Ondine",
+            "logo": "ressources/dresseurs/ondine.jpg",
+            "seuil": 10,
+            "idcible": 2,
+            "ratio": 0,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Régis",
+            "logo": "ressources/dresseurs/regis.jpg",
+            "seuil": 10,
+            "idcible": 3,
+            "ratio": 0,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Major Bob",
+            "logo": "ressources/dresseurs/majorBob.jpg",
+            "seuil": 10,
+            "idcible": 4,
+            "ratio": 0,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Giovanni",
+            "logo": "ressources/dresseurs/giovanni.jpg",
+            "seuil": 10,
+            "idcible": 5,
+            "ratio": 0,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+        {
+            "name": "Peter",
+            "logo": "ressources/dresseurs/peter.jpg",
+            "seuil": 10,
+            "idcible": 6,
+            "ratio": 0,
+            "typeratio": "gain",
+            "unlocked": "false"
+        },
+    ]
     };
