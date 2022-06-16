@@ -1,6 +1,6 @@
 module.exports = {
     "name": "PokeWorld",
-    "logo": "ressources/logomonde.jpg",
+    "logo": "/logomonde.png",
     "money": 0,
     "score": 0,
     "totalangels": 0,
@@ -11,7 +11,7 @@ module.exports = {
         {
             "id": 1,
             "name": "Bulbizarre",
-            "logo": "ressources/pokemons/teamBulbi/bulbasaur.png",
+            "logo": "/pokemons/teamBulbi/bulbasaur.png",
             "cout": 4,
             "croissance": 1.07,
             "revenu": 1,
@@ -19,10 +19,10 @@ module.exports = {
             "quantite": 1,
             "timeleft": 0,
             "managerUnlocked": false,
-            "palliers": [
+            "paliers": [
                 {
                     "name": "Bulbizarre",
-                    "logo": "ressources/pokemons/teamBulbi/bulbasaur.png",
+                    "logo": "/pokemons/teamBulbi/bulbasaur.png",
                     "seuil": 20,
                     "idcible": 1,
                     "ratio": 2,
@@ -31,7 +31,7 @@ module.exports = {
                 },
                 {
                     "name": "Herbizarre",
-                    "logo": "ressources/pokemons/teamBulbi/ivysaur.png",
+                    "logo": "/pokemons/teamBulbi/ivysaur.png",
                     "seuil": 50,
                     "idcible": 1,
                     "ratio": 2,
@@ -40,7 +40,7 @@ module.exports = {
                 },
                 {
                     "name": "Florizarre",
-                    "logo": "ressources/pokemons/teamBulbi/venusaur.png",
+                    "logo": "/pokemons/teamBulbi/venusaur.png",
                     "seuil": 100,
                     "idcible": 1,
                     "ratio": 2,
@@ -52,7 +52,7 @@ module.exports = {
         {
             "id": 2,
             "name": "Carapuce",
-            "logo": "ressources/pokemons/teamCara/squirtle.png",
+            "logo": "/pokemons/teamCara/squirtle.png",
             "cout": 60,
             "croissance": 1.15,
             "revenu": 60,
@@ -60,10 +60,10 @@ module.exports = {
             "quantite": 1,
             "timeleft": 0,
             "managerUnlocked": false,
-            "palliers": [
+            "paliers": [
                 {
                     "name": "Carapuce",
-                    "logo": "ressources/pokemons/teamCara/squirtle.png",
+                    "logo": "/pokemons/teamCara/squirtle.png",
                     "seuil": 20,
                     "idcible": 2,
                     "ratio": 2,
@@ -72,7 +72,7 @@ module.exports = {
                 },
                 {
                     "name": "Carabaffe",
-                    "logo": "ressources/pokemons/teamCara/wartortle.png",
+                    "logo": "/pokemons/teamCara/wartortle.png",
                     "seuil": 50,
                     "idcible": 2,
                     "ratio": 2,
@@ -81,7 +81,7 @@ module.exports = {
                 },
                 {
                     "name": "Tortank",
-                    "logo": "ressources/pokemons/teamCara/blastoise.png",
+                    "logo": "/pokemons/teamCara/blastoise.png",
                     "seuil": 100,
                     "idcible": 2,
                     "ratio": 2,
@@ -93,7 +93,7 @@ module.exports = {
         {
             "id": 3,
             "name": "Salamèche",
-            "logo": "ressources/pokemons/teamDrac/charmander.png",
+            "logo": "/pokemons/teamDrac/charmander.png",
             "cout": 720,
             "croissance": 1.14,
             "revenu": 540,
@@ -101,10 +101,10 @@ module.exports = {
             "quantite": 1,
             "timeleft": 0,
             "managerUnlocked": false,
-            "palliers": [
+            "paliers": [
                 {
                     "name": "Salamèche",
-                    "logo": "ressources/pokemons/teamDrac/charmander.png",
+                    "logo": "/pokemons/teamDrac/charmander.png",
                     "seuil": 20,
                     "idcible": 3,
                     "ratio": 2,
@@ -113,7 +113,7 @@ module.exports = {
                 },
                 {
                     "name": "Reptincel",
-                    "logo": "ressources/pokemons/teamDrac/charmaleon.png",
+                    "logo": "/pokemons/teamDrac/charmaleon.png",
                     "seuil": 75,
                     "idcible": 3,
                     "ratio": 2,
@@ -122,7 +122,7 @@ module.exports = {
                 },
                 {
                     "name": "Dracaufeu",
-                    "logo": "ressources/pokemons/teamDrac/charizard.png",
+                    "logo": "/pokemons/teamDrac/charizard.png",
                     "seuil": 100,
                     "idcible": 3,
                     "ratio": 2,
@@ -134,7 +134,7 @@ module.exports = {
         {
             "id": 4,
             "name": "Pichu",
-            "logo": "ressources/pokemons/teamPika/pichu.png",
+            "logo": "/pokemons/teamPika/pichu.png",
             "cout": 8640,
             "croissance": 1.13,
             "revenu": 4320,
@@ -142,10 +142,10 @@ module.exports = {
             "quantite": 1,
             "timeleft": 0,
             "managerUnlocked": false,
-            "palliers": [
+            "paliers": [
                 {
                     "name": "Pichu",
-                    "logo": "ressources/pokemons/teamPika/pichu.png",
+                    "logo": "/pokemons/teamPika/pichu.png",
                     "seuil": 20,
                     "idcible": 4,
                     "ratio": 2,
@@ -154,7 +154,7 @@ module.exports = {
                 },
                 {
                     "name": "Pikachu",
-                    "logo": "ressources/pokemons/teamPika/pikachu.png",
+                    "logo": "/pokemons/teamPika/pikachu.png",
                     "seuil": 75,
                     "idcible": 4,
                     "ratio": 2,
@@ -163,7 +163,7 @@ module.exports = {
                 },
                 {
                     "name": "Raichu",
-                    "logo": "ressources/pokemons/teamPika/raichu.png",
+                    "logo": "/pokemons/teamPika/raichu.png",
                     "seuil": 100,
                     "idcible": 4,
                     "ratio": 2,
@@ -175,7 +175,7 @@ module.exports = {
         {
             "id": 5,
             "name": "Fantominus",
-            "logo": "ressources/pokemons/teamEcto/gastly.png",
+            "logo": "/pokemons/teamEcto/gastly.png",
             "cout": 103680,
             "croissance": 1.12,
             "revenu": 51840,
@@ -183,10 +183,10 @@ module.exports = {
             "quantite": 1,
             "timeleft": 0,
             "managerUnlocked": false,
-            "palliers": [
+            "paliers": [
                 {
                     "name": "Fantominus",
-                    "logo": "ressources/pokemons/teamEcto/gastly.png",
+                    "logo": "/pokemons/teamEcto/gastly.png",
                     "seuil": 20,
                     "idcible": 5,
                     "ratio": 2,
@@ -195,7 +195,7 @@ module.exports = {
                 },
                 {
                     "name": "Spectrum",
-                    "logo": "ressources/pokemons/teamEcto/haunter.png",
+                    "logo": "/pokemons/teamEcto/haunter.png",
                     "seuil": 75,
                     "idcible": 5,
                     "ratio": 2,
@@ -204,7 +204,7 @@ module.exports = {
                 },
                 {
                     "name": "Ectoplasma",
-                    "logo": "ressources/pokemons/teamEcto/gengar.png",
+                    "logo": "/pokemons/teamEcto/gengar.png",
                     "seuil": 100,
                     "idcible": 5,
                     "ratio": 2,
@@ -216,7 +216,7 @@ module.exports = {
         {
             "id": 6,
             "name": "Minidraco",
-            "logo": "ressources/pokemons/teamDragon/dratini.png",
+            "logo": "/pokemons/teamDragon/dratini.png",
             "cout": 4,
             "croissance": 1.11,
             "revenu": 622080,
@@ -224,10 +224,10 @@ module.exports = {
             "quantite": 1,
             "timeleft": 0,
             "managerUnlocked": false,
-            "palliers": [
+            "paliers": [
                 {
                     "name": "Minidraco",
-                    "logo": "ressources/pokemons/teamDragon/dratini.png",
+                    "logo": "/pokemons/teamDragon/dratini.png",
                     "seuil": 20,
                     "idcible": 6,
                     "ratio": 2,
@@ -236,7 +236,7 @@ module.exports = {
                 },
                 {
                     "name": "Draco",
-                    "logo": "ressources/pokemons/teamDragon/dragonair.png",
+                    "logo": "/pokemons/teamDragon/dragonair.png",
                     "seuil": 75,
                     "idcible": 6,
                     "ratio": 2,
@@ -245,7 +245,7 @@ module.exports = {
                 },
                 {
                     "name": "Dracolosse",
-                    "logo": "ressources/pokemons/teamDragon/dragonite.png",
+                    "logo": "/pokemons/teamDragon/dragonite.png",
                     "seuil": 100,
                     "idcible": 6,
                     "ratio": 2,
@@ -263,7 +263,7 @@ module.exports = {
             "idcible": 0,
             "ratio": 2,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Nom du premier unlock général",
@@ -272,7 +272,7 @@ module.exports = {
             "idcible": 0,
             "ratio": 2,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Nom du premier unlock général",
@@ -281,7 +281,7 @@ module.exports = {
             "idcible": 0,
             "ratio": 2,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Maître de la ligue",
@@ -290,7 +290,7 @@ module.exports = {
             "idcible": 0,
             "ratio": 2,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
     ],
     "upgrades": [
@@ -301,7 +301,7 @@ module.exports = {
             "idcible": 1,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Nom du premier upgrade",
@@ -310,7 +310,7 @@ module.exports = {
             "idcible": 2,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Nom du premier upgrade",
@@ -319,7 +319,7 @@ module.exports = {
             "idcible": 3,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Nom du premier upgrade",
@@ -328,7 +328,7 @@ module.exports = {
             "idcible": 4,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Nom du premier upgrade",
@@ -337,7 +337,7 @@ module.exports = {
             "idcible": 5,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Nom du premier upgrade",
@@ -346,101 +346,101 @@ module.exports = {
             "idcible": 6,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
     ],
     "angelupgrades": [
         {
             "name": "Palkia",
-            "logo": "ressources/angels/palkia.png",
+            "logo": "/angels/palkia.png",
             "seuil": 10,
             "idcible": 0,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Dialga",
-            "logo": "ressources/angels/dialga.png",
+            "logo": "/angels/dialga.png",
             "seuil": 10,
             "idcible": 0,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Mewtwo",
-            "logo": "ressources/angels/mewtwo.png",
+            "logo": "/angels/mewtwo.png",
             "seuil": 10,
             "idcible": 0,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Mew",
-            "logo": "ressources/angels/mew.png",
+            "logo": "/angels/mew.png",
             "seuil": 10,
             "idcible": 0,
             "ratio": 3,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
     ],
     "managers": [
         {
             "name": "Pierre",
-            "logo": "ressources/dresseurs/pierre.jpg",
+            "logo": "/dresseurs/pierre.jpg",
             "seuil": 10,
             "idcible": 1,
             "ratio": 0,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Ondine",
-            "logo": "ressources/dresseurs/ondine.jpg",
+            "logo": "/dresseurs/ondine.jpg",
             "seuil": 10,
             "idcible": 2,
             "ratio": 0,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Régis",
-            "logo": "ressources/dresseurs/regis.jpg",
+            "logo": "/dresseurs/regis.jpg",
             "seuil": 10,
             "idcible": 3,
             "ratio": 0,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Major Bob",
-            "logo": "ressources/dresseurs/majorBob.jpg",
+            "logo": "/dresseurs/majorBob.jpg",
             "seuil": 10,
             "idcible": 4,
             "ratio": 0,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Giovanni",
-            "logo": "ressources/dresseurs/giovanni.jpg",
+            "logo": "/dresseurs/giovanni.jpg",
             "seuil": 10,
             "idcible": 5,
             "ratio": 0,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
         {
             "name": "Peter",
-            "logo": "ressources/dresseurs/peter.jpg",
+            "logo": "/dresseurs/peter.jpg",
             "seuil": 10,
             "idcible": 6,
             "ratio": 0,
             "typeratio": "gain",
-            "unlocked": "false"
+            "unlocked": false
         },
     ]
     };

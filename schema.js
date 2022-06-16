@@ -7,15 +7,7 @@ module.exports = gql`
     ange
   }
 
-  type Palier {
-    name: String!
-    logo: String
-    seuil: Float
-    idcible: Int
-    ratio: Int
-    typeratio: RatioType
-    unlocked: Boolean
-  }
+
 
   type Product {
     id: Int!
@@ -30,6 +22,17 @@ module.exports = gql`
     managerUnlocked: Boolean
     paliers: [Palier]
   }
+
+  type Palier {
+    name: String!
+    logo: String
+    seuil: Float
+    idcible: Int
+    ratio: Int
+    typeratio: RatioType
+    unlocked: Boolean
+  }
+  
   type World {
     name: String!
     logo: String

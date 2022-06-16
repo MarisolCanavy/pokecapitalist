@@ -29,6 +29,8 @@ const server = new ApolloServer({
  });
 
 const app = express();
+
+//le chemin par défault
 app.use(express.static('ressources'));
 
 server.start().then((res) => {
