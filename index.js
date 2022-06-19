@@ -12,10 +12,13 @@ let world = require("./world")
 
 
 async function readUserWorld(user) {
+  var fs = require('fs').promises
   try {
     const data = await fs.readFile("userworlds/" + user + "-world.json");
-    return JSON.parse(data);
+    let res = JSON.parse(data)
+    return res;
   } catch (error) {
+    {console.log(error)}
     return world;
   }
 }
@@ -23,8 +26,8 @@ async function readUserWorld(user) {
 const server = new ApolloServer({
   typeDefs, resolvers,
   context: async ({ req }) => ({
-  world: await readUserWorld(req.headers["x-user"]),
-  user: req.headers["x-user"]
+    world: await readUserWorld(req.headers["x-user"]),
+    user: req.headers["x-user"]
   })
  });
 

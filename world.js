@@ -6,7 +6,7 @@ module.exports = {
     "totalangels": 0,
     "activeangels": 0,
     "angelbonus": 2,
-    "lastupdate": 0,
+    "lastupdate": "0",
     "products": [
         {
             "id": 1,
@@ -390,7 +390,7 @@ module.exports = {
     "managers": [
         {
             "name": "Pierre",
-            "logo": "/dresseurs/pierre.jpg",
+            "logo": "/dresseurs/pierre.gif",
             "seuil": 10,
             "idcible": 1,
             "ratio": 0,
@@ -399,8 +399,8 @@ module.exports = {
         },
         {
             "name": "Ondine",
-            "logo": "/dresseurs/ondine.jpg",
-            "seuil": 10,
+            "logo": "/dresseurs/ondine.gif",
+            "seuil": 20,
             "idcible": 2,
             "ratio": 0,
             "typeratio": "gain",
@@ -408,8 +408,8 @@ module.exports = {
         },
         {
             "name": "Régis",
-            "logo": "/dresseurs/regis.jpg",
-            "seuil": 10,
+            "logo": "/dresseurs/regis.gif",
+            "seuil": 30,
             "idcible": 3,
             "ratio": 0,
             "typeratio": "gain",
@@ -417,8 +417,8 @@ module.exports = {
         },
         {
             "name": "Major Bob",
-            "logo": "/dresseurs/majorBob.jpg",
-            "seuil": 10,
+            "logo": "/dresseurs/majorBob.gif",
+            "seuil": 40,
             "idcible": 4,
             "ratio": 0,
             "typeratio": "gain",
@@ -426,8 +426,8 @@ module.exports = {
         },
         {
             "name": "Giovanni",
-            "logo": "/dresseurs/giovanni.jpg",
-            "seuil": 10,
+            "logo": "/dresseurs/giovanni.gif",
+            "seuil": 50,
             "idcible": 5,
             "ratio": 0,
             "typeratio": "gain",
@@ -435,8 +435,8 @@ module.exports = {
         },
         {
             "name": "Peter",
-            "logo": "/dresseurs/peter.jpg",
-            "seuil": 10,
+            "logo": "/dresseurs/peter.gif",
+            "seuil": 60,
             "idcible": 6,
             "ratio": 0,
             "typeratio": "gain",

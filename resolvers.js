@@ -12,53 +12,64 @@ function saveWorld(context) {
   );
 }
 
-//porblème ici carc la conversion 32 vers 64 bits ne se fait pas bien
+//porblème ici car la conversion 32 vers 64 bits ne se fait pas bien
 function majScore(context) {
-  var tempsEcoule = Date.now().toString() - context.world.lastupdate;
-  
-  const products = context.world.products.map((product) => {
-    if(product.managerUnlocked = "false"){
-      if(product.timeleft !== 0 | product.timeleft < parseInt(context.world.lastupdate)){
-        context.world.score += product.quantite*product.revenu;
-      }else{
-        product.timeleft = tempsEcoule;
-        console.log(tempsEcoule);
+  if(context.world){
+    let tempsEcoule = Date.now() - parseInt(context.world.lastupdate);
+
+    context.world.products.map((product) => {
+      // option 1 : le produit n'a pas de manager débloquer
+      if(product.managerUnlocked == false){
+        //regarde si le produit est en production
+        if(product.timeleft !== 0){
+          //si le produit a été produit, on rajoute au monde son gain
+          if(product.timeleft > tempsEcoule){
+            //plus tard il faudra rajouter le bonus des anges
+            context.world.score += product.revenu;
+          }else {
+            {console.log(tempsEcoule)}
+            product.timeleft = product.timeleft - tempsEcoule;
+          }
+        }
+      // option 2 : le produit a le manager débloquer
+      } else if (product.managerUnlocked == true){
+        context.world.score += Math.floor(tempsEcoule / product.vitesse)*product.revenu;
+        product.timeleft = parseInt(product.vitesse - (Math.floor(parseInt(tempsEcoule) / product.vitesse))*product.vitesse);
       }
-    }
-    else if (product.managerUnlocked = "true"){
-      context.world.score += floor(tempsEcoule / product.vitesse)*product.revenu;
-      product.timeleft = parseInt(product.vitesse - (floor(parseInt(tempsEcoule) / product.vitesse))*product.vitesse);
-    }
-    return product;
   });
+    
+  // mise à jour du lastupdate
+  context.world.lastupdate = Date.now().toString()
+  }
 }
 
 module.exports = {
   Query: {
     getWorld(parent, args, context) {
+      {console.log(context.world.money)}
+      {console.log(context.user)}
       saveWorld(context);
-      //majScore(context);
+      majScore(context);
       return context.world;
     }
   },
   Mutation: {
-    acheterQtProduit(parent, {id, quantite}, {world}) {
+    acheterQtProduit(parent, args, {world}) {
       let productFind = null;
 
       const products = world.products.map((product) => {
-        if (product.id == id){
-          let somme = product.cout((1-Math.pow(product.croissance, quantite))/(1-product.croissance));
-
-          if(world.money - somme > 0){
-            if(world.lastupdate-product.timeleft>0){
-              miseAjour(world);
+        if (product.id == args.id){
+          let somme = product.cout*((1-Math.pow(product.croissance, product.quantite+args.quantite))/(1-product.croissance))-product.cout*((1-Math.pow(product.croissance, product.quantite))/(1-product.croissance))
+          
+          if(world.money - somme >= 0){
+            if(parseInt(world.lastupdate)-product.timeleft>0){
+              majScore(world);
             }
-            world.money -= product.cout * quantite;
 
-            product.quantite += product.quantite;
+            world.money -= somme;
+            product.quantite += args.quantite;
             productFind = product;
-            product.timeleft = product.vitesse;
-            world.lastupdate = Date.now();
+            world.lastupdate = Date.now().toString()
           }else{
             console.error(err);
             throw new Error( `Le monde n'a pas assez d'argent ${context.money} pour acheter le produit ${args.quantite} x ${args.cout}.`)
@@ -75,19 +86,19 @@ module.exports = {
       saveWorld(world);
       return productFind;    
     },
-    lancerProductionProduit(parent, {id}, {world}){
+    lancerProductionProduit(parent, args, context){
       let productFind = null;
 
-      const products = world.products.map((product) => {
-        if (product.id == id){
-            if(world.lastupdate-product.timeleft>0){
-              product.timeleft = product.vitesse;
-              productFind = product;
-              miseAjour(world);
-            }
+      console.log("read args of lancerProductionProduit " + args.id);
+      console.log("read world of lancerProductionProduit " + context.world.products);
 
-            world.lastupdate = Date.now().toString;
-          }
+      context.world.products.map((product) => {
+        if (product.id == args.id){
+            product.timeleft = product.vitesse;
+            productFind = product;
+            majScore(context.world);
+
+            context.world.lastupdate = Date.now().toString()          }
         return productFind;
       })
 
@@ -95,8 +106,9 @@ module.exports = {
         console.error(err);
         throw new Error( `Le produit avec l'id ${args.id} n'existe pas`)
       }
+      console.log("found of lancerProductionProduit " + productFind.name);
 
-      saveWorld(world);
+      saveWorld(context.world);
       return productFind;  
     },
     engagerManager(parent, {name}, {world}){
@@ -105,15 +117,15 @@ module.exports = {
       let produitManage = null;
 
       const managers = world.managers.map((manager) => {
-        if (managers.id == id){
+        if (managers.name == name){
           idManagee = manager.idcible;
           managerFind = manager;
-          manager.unlocked = "true";
+          manager.unlocked = true;
 
           const produits = world.products.map((product) => {
-            if (product.id == id){
+            if (product.id == idManagee){
               produitManage = product;
-              product.managerUnlocked = "true";
+              product.managerUnlocked = true;
             }
             return product;
           })
@@ -125,6 +137,12 @@ module.exports = {
         console.error(err);
         throw new Error( `Le manager avec le nom ${args.name} n'existe pas.`)
       }
+
+      if (produitManage == null) {
+        console.error(err);
+        throw new Error( `Le produit dont le manager est ${args.name} n'existe pas.`)
+      }
+
       saveWorld(world);
       return productFind; 
     }
