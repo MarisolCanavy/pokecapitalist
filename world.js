@@ -342,7 +342,7 @@ module.exports = {
         {
             "name": "Nom du premier upgrade",
             "logo": "/pokemons/teamBulbi/bulbasaur.png",
-            "seuil": 1e3,
+            "seuil": 500,
             "idcible": 1,
             "ratio": 3,
             "typeratio": "gain",
@@ -351,7 +351,7 @@ module.exports = {
         {
             "name": "Nom du second upgrade",
             "logo": "/pokemons/teamCara/squirtle.png",
-            "seuil": 1e3,
+            "seuil": 1000,
             "idcible": 2,
             "ratio": 3,
             "typeratio": "gain",
@@ -360,7 +360,7 @@ module.exports = {
         {
             "name": "Nom du troisieme upgrade",
             "logo": "/pokemons/teamDrac/charmander.png",
-            "seuil": 1e3,
+            "seuil": 2e3,
             "idcible": 3,
             "ratio": 3,
             "typeratio": "gain",
@@ -369,7 +369,7 @@ module.exports = {
         {
             "name": "Nom du quatrieme upgrade",
             "logo": "/pokemons/teamPika/pichu.png",
-            "seuil": 1e3,
+            "seuil": 4e3,
             "idcible": 4,
             "ratio": 3,
             "typeratio": "gain",
@@ -378,7 +378,7 @@ module.exports = {
         {
             "name": "Nom du cinquieme upgrade",
             "logo": "/pokemons/teamEcto/gastly.png",
-            "seuil": 1e3,
+            "seuil": 8e3,
             "idcible": 5,
             "ratio": 3,
             "typeratio": "gain",
@@ -387,7 +387,7 @@ module.exports = {
         {
             "name": "Nom du sixieme upgrade",
             "logo": "/pokemons/teamDragon/dratini.png",
-            "seuil": 1e3,
+            "seuil": 10e3,
             "idcible": 6,
             "ratio": 3,
             "typeratio": "gain",
@@ -436,7 +436,7 @@ module.exports = {
         {
             "name": "Pierre",
             "logo": "/dresseurs/pierre.gif",
-            "seuil": 10,
+            "seuil": 25,
             "idcible": 1,
             "ratio": 0,
             "typeratio": "gain",
@@ -445,7 +445,7 @@ module.exports = {
         {
             "name": "Ondine",
             "logo": "/dresseurs/ondine.gif",
-            "seuil": 20,
+            "seuil": 50,
             "idcible": 2,
             "ratio": 0,
             "typeratio": "gain",
@@ -454,7 +454,7 @@ module.exports = {
         {
             "name": "Régis",
             "logo": "/dresseurs/regis.gif",
-            "seuil": 30,
+            "seuil": 100,
             "idcible": 3,
             "ratio": 0,
             "typeratio": "gain",
@@ -463,7 +463,7 @@ module.exports = {
         {
             "name": "Major Bob",
             "logo": "/dresseurs/majorBob.gif",
-            "seuil": 40,
+            "seuil": 200,
             "idcible": 4,
             "ratio": 0,
             "typeratio": "gain",
@@ -472,7 +472,7 @@ module.exports = {
         {
             "name": "Giovanni",
             "logo": "/dresseurs/giovanni.gif",
-            "seuil": 50,
+            "seuil": 400,
             "idcible": 5,
             "ratio": 0,
             "typeratio": "gain",
@@ -481,7 +481,7 @@ module.exports = {
         {
             "name": "Peter",
             "logo": "/dresseurs/peter.gif",
-            "seuil": 60,
+            "seuil": 800,
             "idcible": 6,
             "ratio": 0,
             "typeratio": "gain",
