@@ -1,7 +1,7 @@
 module.exports = {
     "name": "PokeWorld",
     "logo": "/logomonde.png",
-    "money": 500000,
+    "money": 50,
     "score": 0,
     "totalangels": 0,
     "activeangels": 0,
@@ -12,7 +12,7 @@ module.exports = {
             "id": 1,
             "name": "Bulbizarre",
             "logo": "/pokemons/teamBulbi/bulbasaur.png",
-            "cout": 2,
+            "cout": 5,
             "croissance": 1.07,
             "revenu": 1,
             "vitesse": 500,
@@ -23,7 +23,7 @@ module.exports = {
                 {
                     "name": "Bulbizarre",
                     "logo": "/pokemons/teamBulbi/bulbasaur.png",
-                    "seuil": 10,
+                    "seuil": 15,
                     "idcible": 1,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -32,7 +32,7 @@ module.exports = {
                 {
                     "name": "Herbizarre",
                     "logo": "/pokemons/teamBulbi/ivysaur.png",
-                    "seuil": 20,
+                    "seuil": 30,
                     "idcible": 1,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -41,7 +41,7 @@ module.exports = {
                 {
                     "name": "Florizarre",
                     "logo": "/pokemons/teamBulbi/venusaur.png",
-                    "seuil": 30,
+                    "seuil": 60,
                     "idcible": 1,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -62,7 +62,7 @@ module.exports = {
             "id": 2,
             "name": "Carapuce",
             "logo": "/pokemons/teamCara/squirtle.png",
-            "cout": 12,
+            "cout": 15,
             "croissance": 1.15,
             "revenu": 10,
             "vitesse": 3000,
@@ -73,7 +73,7 @@ module.exports = {
                 {
                     "name": "Carapuce",
                     "logo": "/pokemons/teamCara/squirtle.png",
-                    "seuil": 10,
+                    "seuil": 15,
                     "idcible": 2,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -82,7 +82,7 @@ module.exports = {
                 {
                     "name": "Carabaffe",
                     "logo": "/pokemons/teamCara/wartortle.png",
-                    "seuil": 20,
+                    "seuil": 30,
                     "idcible": 2,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -91,7 +91,7 @@ module.exports = {
                 {
                     "name": "Tortank",
                     "logo": "/pokemons/teamCara/blastoise.png",
-                    "seuil": 30,
+                    "seuil": 60,
                     "idcible": 2,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -112,7 +112,7 @@ module.exports = {
             "id": 3,
             "name": "Salamèche",
             "logo": "/pokemons/teamDrac/charmander.png",
-            "cout": 25,
+            "cout": 30,
             "croissance": 1.14,
             "revenu": 20,
             "vitesse": 6000,
@@ -123,7 +123,7 @@ module.exports = {
                 {
                     "name": "Salamèche",
                     "logo": "/pokemons/teamDrac/charmander.png",
-                    "seuil": 10,
+                    "seuil": 15,
                     "idcible": 3,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -132,7 +132,7 @@ module.exports = {
                 {
                     "name": "Reptincel",
                     "logo": "/pokemons/teamDrac/charmeleon.png",
-                    "seuil": 20,
+                    "seuil": 30,
                     "idcible": 3,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -141,7 +141,7 @@ module.exports = {
                 {
                     "name": "Dracaufeu",
                     "logo": "/pokemons/teamDrac/charizard.png",
-                    "seuil": 30,
+                    "seuil": 60,
                     "idcible": 3,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -162,7 +162,7 @@ module.exports = {
             "id": 4,
             "name": "Pichu",
             "logo": "/pokemons/teamPika/pichu.png",
-            "cout": 30,
+            "cout": 60,
             "croissance": 1.13,
             "revenu": 20,
             "vitesse": 12000,
@@ -173,7 +173,7 @@ module.exports = {
                 {
                     "name": "Pichu",
                     "logo": "/pokemons/teamPika/pichu.png",
-                    "seuil": 10,
+                    "seuil": 15,
                     "idcible": 4,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -182,7 +182,7 @@ module.exports = {
                 {
                     "name": "Pikachu",
                     "logo": "/pokemons/teamPika/pikachu.png",
-                    "seuil": 20,
+                    "seuil": 30,
                     "idcible": 4,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -191,7 +191,7 @@ module.exports = {
                 {
                     "name": "Raichu",
                     "logo": "/pokemons/teamPika/raichu.png",
-                    "seuil": 30,
+                    "seuil": 60,
                     "idcible": 4,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -212,7 +212,7 @@ module.exports = {
             "id": 5,
             "name": "Fantominus",
             "logo": "/pokemons/teamEcto/gastly.png",
-            "cout": 40,
+            "cout": 120,
             "croissance": 1.12,
             "revenu": 30,
             "vitesse": 24000,
@@ -223,7 +223,7 @@ module.exports = {
                 {
                     "name": "Fantominus",
                     "logo": "/pokemons/teamEcto/gastly.png",
-                    "seuil": 10,
+                    "seuil": 15,
                     "idcible": 5,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -232,7 +232,7 @@ module.exports = {
                 {
                     "name": "Spectrum",
                     "logo": "/pokemons/teamEcto/haunter.png",
-                    "seuil": 20,
+                    "seuil": 30,
                     "idcible": 5,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -241,7 +241,7 @@ module.exports = {
                 {
                     "name": "Ectoplasma",
                     "logo": "/pokemons/teamEcto/gengar.png",
-                    "seuil": 30,
+                    "seuil": 60,
                     "idcible": 5,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -262,7 +262,7 @@ module.exports = {
             "id": 6,
             "name": "Minidraco",
             "logo": "/pokemons/teamDragon/dratini.png",
-            "cout": 50,
+            "cout": 240,
             "croissance": 1.11,
             "revenu": 35,
             "vitesse": 96000,
@@ -273,7 +273,7 @@ module.exports = {
                 {
                     "name": "Minidraco",
                     "logo": "/pokemons/teamDragon/dratini.png",
-                    "seuil": 10,
+                    "seuil": 15,
                     "idcible": 6,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -282,7 +282,7 @@ module.exports = {
                 {
                     "name": "Draco",
                     "logo": "/pokemons/teamDragon/dragonair.png",
-                    "seuil": 20,
+                    "seuil": 30,
                     "idcible": 6,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -291,7 +291,7 @@ module.exports = {
                 {
                     "name": "Dracolosse",
                     "logo": "/pokemons/teamDragon/dragonite.png",
-                    "seuil": 30,
+                    "seuil": 60,
                     "idcible": 6,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -313,7 +313,7 @@ module.exports = {
         {
             "name": "Professeur Chen",
             "logo": "/icones/Professeur_Chen.png",
-            "seuil": 10,
+            "seuil": 15,
             "idcible": 0,
             "ratio": 2,
             "typeratio": "gain",
@@ -322,7 +322,7 @@ module.exports = {
         {
             "name": "Red",
             "logo": "/icones/Red.png",
-            "seuil": 20,
+            "seuil": 30,
             "idcible": 0,
             "ratio": 2,
             "typeratio": "gain",
@@ -331,7 +331,7 @@ module.exports = {
         {
             "name": "Scout",
             "logo": "/icones/Scout.png",
-            "seuil": 30,
+            "seuil": 60,
             "idcible": 0,
             "ratio": 2,
             "typeratio": "gain",
@@ -349,7 +349,7 @@ module.exports = {
             "unlocked": false
         },
         {
-            "name": "Nom du premier upgrade",
+            "name": "Nom du second upgrade",
             "logo": "/pokemons/teamCara/squirtle.png",
             "seuil": 1e3,
             "idcible": 2,
@@ -358,7 +358,7 @@ module.exports = {
             "unlocked": false
         },
         {
-            "name": "Nom du premier upgrade",
+            "name": "Nom du troisieme upgrade",
             "logo": "/pokemons/teamDrac/charmander.png",
             "seuil": 1e3,
             "idcible": 3,
@@ -367,7 +367,7 @@ module.exports = {
             "unlocked": false
         },
         {
-            "name": "Nom du premier upgrade",
+            "name": "Nom du quatrieme upgrade",
             "logo": "/pokemons/teamPika/pichu.png",
             "seuil": 1e3,
             "idcible": 4,
@@ -376,7 +376,7 @@ module.exports = {
             "unlocked": false
         },
         {
-            "name": "Nom du premier upgrade",
+            "name": "Nom du cinquieme upgrade",
             "logo": "/pokemons/teamEcto/gastly.png",
             "seuil": 1e3,
             "idcible": 5,
@@ -385,7 +385,7 @@ module.exports = {
             "unlocked": false
         },
         {
-            "name": "Nom du premier upgrade",
+            "name": "Nom du sixieme upgrade",
             "logo": "/pokemons/teamDragon/dratini.png",
             "seuil": 1e3,
             "idcible": 6,
