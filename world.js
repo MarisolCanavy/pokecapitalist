@@ -1,7 +1,7 @@
 module.exports = {
     "name": "PokeWorld",
     "logo": "/logomonde.png",
-    "money": 50,
+    "money": 500000,
     "score": 0,
     "totalangels": 0,
     "activeangels": 0,
@@ -42,6 +42,15 @@ module.exports = {
                     "name": "Florizarre",
                     "logo": "/pokemons/teamBulbi/venusaur.png",
                     "seuil": 30,
+                    "idcible": 1,
+                    "ratio": 2,
+                    "typeratio": "vitesse",
+                    "unlocked": false
+                },
+                {
+                    "name": "Florizarre",
+                    "logo": "/pokemons/teamBulbi/venusaur.png",
+                    "seuil": 150,
                     "idcible": 1,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -88,6 +97,15 @@ module.exports = {
                     "typeratio": "vitesse",
                     "unlocked": false
                 },
+                {
+                    "name": "Tortank",
+                    "logo": "/pokemons/teamCara/blastoise.png",
+                    "seuil": 150,
+                    "idcible": 2,
+                    "ratio": 2,
+                    "typeratio": "vitesse",
+                    "unlocked": false
+                },
             ]
         },
         {
@@ -113,7 +131,7 @@ module.exports = {
                 },
                 {
                     "name": "Reptincel",
-                    "logo": "/pokemons/teamDrac/charmaleon.png",
+                    "logo": "/pokemons/teamDrac/charmeleon.png",
                     "seuil": 20,
                     "idcible": 3,
                     "ratio": 2,
@@ -124,6 +142,15 @@ module.exports = {
                     "name": "Dracaufeu",
                     "logo": "/pokemons/teamDrac/charizard.png",
                     "seuil": 30,
+                    "idcible": 3,
+                    "ratio": 2,
+                    "typeratio": "vitesse",
+                    "unlocked": false
+                },
+                {
+                    "name": "Dracaufeu",
+                    "logo": "/pokemons/teamDrac/charizard.png",
+                    "seuil": 150,
                     "idcible": 3,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -170,6 +197,15 @@ module.exports = {
                     "typeratio": "vitesse",
                     "unlocked": false
                 },
+                {
+                    "name": "Raichu",
+                    "logo": "/pokemons/teamPika/raichu.png",
+                    "seuil": 150,
+                    "idcible": 4,
+                    "ratio": 2,
+                    "typeratio": "vitesse",
+                    "unlocked": false
+                },
             ]
         },
         {
@@ -206,6 +242,15 @@ module.exports = {
                     "name": "Ectoplasma",
                     "logo": "/pokemons/teamEcto/gengar.png",
                     "seuil": 30,
+                    "idcible": 5,
+                    "ratio": 2,
+                    "typeratio": "vitesse",
+                    "unlocked": false
+                },
+                {
+                    "name": "Ectoplasma",
+                    "logo": "/pokemons/teamEcto/gengar.png",
+                    "seuil": 150,
                     "idcible": 5,
                     "ratio": 2,
                     "typeratio": "vitesse",
@@ -252,6 +297,15 @@ module.exports = {
                     "typeratio": "vitesse",
                     "unlocked": false
                 },
+                {
+                    "name": "Dracolosse",
+                    "logo": "/pokemons/teamDragon/dragonite.png",
+                    "seuil": 150,
+                    "idcible": 6,
+                    "ratio": 2,
+                    "typeratio": "vitesse",
+                    "unlocked": false
+                },
             ]
         }
     ],
@@ -287,7 +341,7 @@ module.exports = {
     "upgrades": [
         {
             "name": "Nom du premier upgrade",
-            "logo": "icones/premierupgrade.jpg",
+            "logo": "/pokemons/teamBulbi/bulbasaur.png",
             "seuil": 1e3,
             "idcible": 1,
             "ratio": 3,
@@ -296,7 +350,7 @@ module.exports = {
         },
         {
             "name": "Nom du premier upgrade",
-            "logo": "icones/premierupgrade.jpg",
+            "logo": "/pokemons/teamCara/squirtle.png",
             "seuil": 1e3,
             "idcible": 2,
             "ratio": 3,
@@ -305,7 +359,7 @@ module.exports = {
         },
         {
             "name": "Nom du premier upgrade",
-            "logo": "icones/premierupgrade.jpg",
+            "logo": "/pokemons/teamDrac/charmander.png",
             "seuil": 1e3,
             "idcible": 3,
             "ratio": 3,
@@ -314,7 +368,7 @@ module.exports = {
         },
         {
             "name": "Nom du premier upgrade",
-            "logo": "icones/premierupgrade.jpg",
+            "logo": "/pokemons/teamPika/pichu.png",
             "seuil": 1e3,
             "idcible": 4,
             "ratio": 3,
@@ -323,7 +377,7 @@ module.exports = {
         },
         {
             "name": "Nom du premier upgrade",
-            "logo": "icones/premierupgrade.jpg",
+            "logo": "/pokemons/teamEcto/gastly.png",
             "seuil": 1e3,
             "idcible": 5,
             "ratio": 3,
@@ -332,7 +386,7 @@ module.exports = {
         },
         {
             "name": "Nom du premier upgrade",
-            "logo": "icones/premierupgrade.jpg",
+            "logo": "/pokemons/teamDragon/dratini.png",
             "seuil": 1e3,
             "idcible": 6,
             "ratio": 3,

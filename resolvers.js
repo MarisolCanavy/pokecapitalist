@@ -24,8 +24,8 @@ function majScore(context) {
           //si le produit a été produit, on rajoute au monde son gain
           if(product.timeleft < tempsEcoule){
             //plus tard il faudra rajouter le bonus des anges
-            context.world.score += product.revenu;
-            context.world.money += product.revenu;
+            context.world.score += product.revenu * product.quantite;
+            context.world.money += product.revenu * product.quantite;
             product.timeleft = 0;
           }else {
             product.timeleft = product.timeleft - tempsEcoule;
@@ -33,9 +33,8 @@ function majScore(context) {
         }
       // option 2 : le produit a le manager débloquer
       } else if (product.managerUnlocked === true){
-        {console.log("MajScore : " + product.name + " a son manager débloqué")}
-        context.world.score += Math.floor(tempsEcoule / product.vitesse)*product.revenu;
-        context.world.money += Math.floor(tempsEcoule / product.vitesse)*product.revenu;
+        context.world.score += Math.floor(tempsEcoule / product.vitesse)*product.revenu*product.quantite;
+        context.world.money += Math.floor(tempsEcoule / product.vitesse)*product.revenu*product.quantite;
         product.timeleft = parseInt(product.vitesse - (Math.floor(parseInt(tempsEcoule) / product.vitesse))*product.vitesse);
       }
     });
@@ -72,6 +71,32 @@ module.exports = {
           if(nextPalier){
             if(productFind.quantite >= nextPalier?.seuil){
               nextPalier.unlocked = true
+              
+              //appliquer l'unlock
+              if (nextPalier.typeratio === "vitesse"){
+                productFind.vitesse = productFind.vitesse / nextPalier.ratio
+              }else if (nextPalier.typeratio === "gain"){
+                productFind.revenu = productFind.revenu * productFind.ratio
+              }
+            }
+
+            //checker l'unlock general
+            let nextAllUnlock = context.world.allunlocks.find( allU => allU.unlocked === false)
+
+            if(nextAllUnlock){
+              let seuil = nextAllUnlock?.seuil
+              let ratio = nextAllUnlock?.ratio
+              if(context.world.products.every(poke => poke.quantite >= seuil)){
+                nextAllUnlock.unlocked = true
+                if (nextAllUnlock?.typeratio === "gain") {
+                  context.world.products.forEach( poke => poke.revenu = poke.revenu * ratio )
+                } else if (nextAllUnlock?.typeratio === "vitesse"){
+                  context.world.products.forEach( poke => poke.vitesse = poke.vitesse / ratio)
+                //TODO 
+                }else if (nextAllUnlock?.typeratio === "ange"){
+                
+                } 
+              }
             }
           }   
       }else{
@@ -82,8 +107,9 @@ module.exports = {
         console.error(err);
         throw new Error( `Le produit avec l'id ${args.id} n'existe pas`)
       }
+      
+      
       saveWorld(context);
-      majScore(context);
       return productFind;    
     },
     lancerProductionProduit(parent, args, context){
@@ -107,7 +133,6 @@ module.exports = {
       let managerFind = context.world.managers.find(m =>  m.name === args.name)
     
       if(managerFind){
-        {console.log(" managerFind found : " + managerFind.name + " manager " + managerFind.unlocked)}
         managerFind.unlocked = true
         context.world.products.map((product)=> {console.log(product.id)})
         let produitManage = context.world.products.find(p =>  p.id === managerFind.idcible )
@@ -125,6 +150,33 @@ module.exports = {
       saveWorld(context);
       majScore(context);
       return managerFind; 
+    },
+    acheterCashUpgrade(parent, args, context){
+      majScore(context)      
+      let cashUpgradeFind = context.world.upgrades.find(u =>  u.name === args.name)
+    
+      if(cashUpgradeFind){
+        cashUpgradeFind.unlocked = true
+
+        let produitUpgrade = context.world.products.find(p =>  p.id === cashUpgradeFind.idcible )
+        if(produitUpgrade){
+          if (cashUpgradeFind.typeratio === "gain") {
+            produitUpgrade.revenu = produitUpgrade.revenu * cashUpgradeFind.ratio
+          } else if (cashUpgradeFind.typeratio === "vitesse"){
+            produitUpgrade.vitesse = produitUpgrade.vitesse / cashUpgradeFind.ratio
+          }
+        }else{
+          console.error(err);
+          throw new Error( `Le produit dont le manager est ${args.name} n'existe pas.`)
+        }  
+      }else{
+        console.error(err);
+        throw new Error( `Le manager avec le nom ${args.name} n'existe pas.`)
+      }
+
+      saveWorld(context);
+      majScore(context);
+      return cashUpgradeFind; 
     }
   },
 };
